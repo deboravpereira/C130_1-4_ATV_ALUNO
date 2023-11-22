@@ -55,7 +55,7 @@ def countFingers(image, hand_landmarks, handNo=0):
 
         if totalFingers == 0 and state == "Play":
             state = "Pause"
-            keyboard.press(Key.space)
+            keyboard.press("k")
         
         # Mover o vídeo PARA A FRENTE e PARA TRÁS(ADICIONAL)    
         finger_tip_x = (landmarks[8].x)*width   
